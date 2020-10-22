@@ -11,17 +11,14 @@ function Sidebar() {
         <TwitterIcon />
 
     
-        <SidebarOption />
-        <SidebarOption />
-        <SidebarOption />
-        <SidebarOption />
-        {/* SidebarOption */}
-        {/* SidebarOption */}
-        {/* SidebarOption */}
-        {/* SidebarOption */}
-        {/* SidebarOption */}
-        {/* SidebarOption */}
-        {/* SidebarOption */}
+        <SidebarOption text='Home'/>
+        <SidebarOption text='Explore'/>
+        <SidebarOption text='Notifications'/>
+        <SidebarOption text='Messages'/>
+        <SidebarOption text='Bookmarks'/>
+        <SidebarOption text='List'/>
+        <SidebarOption text='Profile'/>
+        <SidebarOption text='More'/>
 
         {/* Button -> Tweet */}
             
