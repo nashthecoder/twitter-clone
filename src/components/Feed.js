@@ -15,9 +15,6 @@ function Feed() {
              {/* TweetBox */}
              <TweetBox />
              <h2>Tweet Box</h2>
-             <h2>Tweet Box</h2>
-             <h2>Tweet Box</h2>
-             <h2>Tweet Box</h2>
              {/* Posts */}
              <Post />
 
