@@ -9,4 +9,4 @@ function TweetBox() {
     )
 }
 
-export default TweetBox
+export default TweetBox;
