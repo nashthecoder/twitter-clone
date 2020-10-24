@@ -1,6 +1,6 @@
 import React from 'react';
 import './TweetBox.css';
-import { Avatar, Button, Input } from '@material-ui/core';
+import { Avatar, Button } from '@material-ui/core';
 
 function TweetBox() {
     return (
