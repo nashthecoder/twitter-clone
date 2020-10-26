@@ -6,9 +6,9 @@ import db from '../firebase';
 function TweetBox() {
     const [tweetMessage, setTweetMessage] = useState("");
     const [tweetImage, setTweetImage] = useState("");
-
-    const sendTweet  = (e) => {
-        e.preventDefault();
+  
+    const sendTweet = (e) => {
+      e.preventDefault();
 
         db.collection('posts').add({
             displayName: 'Naijeria Toweett',
