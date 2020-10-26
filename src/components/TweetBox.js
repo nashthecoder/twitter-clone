@@ -4,8 +4,8 @@ import { Avatar, Button } from '@material-ui/core';
 import db from '../firebase';
 
 function TweetBox() {
-    const [tweetMessage , setTweetMessage] = useState('');
-    const [tweetImage, setTweetImage] = useState('');
+    const [tweetMessage, setTweetMessage] = useState("");
+    const [tweetImage, setTweetImage] = useState("");
 
     const sendTweet  = (e) => {
         e.preventDefault();
@@ -19,8 +19,8 @@ function TweetBox() {
             avatar:'https://avatars1.githubusercontent.com/u/15178823?s=460&u=37b7e0864e67a10698025f3abc5c12a287fa1f53&v=4',
         });
 
-        setTweetMessage('');
-        setTweetImage('');
+        setTweetMessage("");
+        setTweetImage("");
     };
 
     return (

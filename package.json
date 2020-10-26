@@ -11,6 +11,7 @@
     "firebase": "^7.24.0",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
+    "react-flip-move": "^3.0.4",
     "react-scripts": "3.4.4",
     "react-twitter-embed": "^3.0.3"
   },
