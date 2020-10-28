@@ -33,6 +33,12 @@ function Sidebar() {
         <Button variant="outlined" className="sidebar__tweet" fullWidth>
             Tweet
         </Button>
+
+        <div>
+        <Button className="sidebar__accountSwitcher" fullWidth>
+            <h3>Nash The Coder</h3>
+        </Button>
+        </div>
             
         </div>
     )
