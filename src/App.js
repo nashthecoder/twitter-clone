@@ -1,6 +1,7 @@
 import React from 'react';
 import Sidebar from './components/Sidebar';
 import Widgets from './components/Widgets';
+import Login from './components/Login';
 import Feed from './components/Feed';
 import './App.css';
 
@@ -11,6 +12,7 @@ function App() {
         <Sidebar />
         <Feed />
         <Widgets />
+        <Login />
 
     </div>
   );
