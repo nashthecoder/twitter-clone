@@ -1,10 +1,19 @@
 import React from 'react';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
+
+import './Login.css';
 
 function Login() {
     return (
-        <div>
-            <h2>Twitter Login Page </h2>
+<Router>
+    <Link to={'/login'}>
+        <div className='login_button'>
+            <h1>@NashTheCoder</h1>
         </div>
+    </Link>
+</Router>
+    
+            
     )
 }
 

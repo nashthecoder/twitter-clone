@@ -26,3 +26,17 @@
     margin-top: 20px !important;
 }
 
+.login_button {
+    font-size: 7px !important;
+    font-weight: 10 ;
+    font-family: sans-serif !important;
+    position: relative;
+    color: #000000;
+    background-color: #1DA1F20;
+    display: flex;
+    box-sizing: border-box;
+    padding: 10px 10px 10ps 10px;
+    padding-top: 150%;
+}
+
+

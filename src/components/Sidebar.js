@@ -1,5 +1,6 @@
 import React from 'react';
 import './Sidebar.css';
+import Login from './Login';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import SidebarOption from './SidebarOption';
 import HomeIcon from "@material-ui/icons/Home";
@@ -10,6 +11,7 @@ import BookmarkBorderIcon from "@material-ui/icons/BookmarkBorder";
 import ListAltIcon from "@material-ui/icons/ListAlt";
 import PermIdentityIcon from "@material-ui/icons/PermIdentity";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { Button } from "@material-ui/core";
 
 
@@ -35,9 +37,16 @@ function Sidebar() {
         </Button>
 
         <div>
-        <Button className="sidebar__accountSwitcher" fullWidth>
-            <h3>Nash The Coder</h3>
-        </Button>
+        <Router>
+         <Login/>
+         <div className='logout'>
+            <Route path='/login'>
+                <Button className="sidebar__accountSwitcher" fullWidth>
+                </Button>
+            </Route>
+         </div>
+            
+        </Router>
         </div>
             
         </div>
