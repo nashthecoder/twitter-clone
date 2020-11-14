@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom'; 
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'; 
+import Login from './components/Login';
 import Sidebar from './components/Sidebar';
 import Widgets from './components/Widgets';
 import Feed from './components/Feed';
@@ -8,14 +9,20 @@ import './App.css';
 
 function App() {
   return (
-    <div className="app">
     <Router>
-          <Sidebar />
-          <Feed />
-          <Widgets />
+      <div className="app"> 
+        <Switch>
+          <Route path='/login'>
+            <Login />
+          </Route>
+          <Route path='/'>
+            <Sidebar />
+            <Feed />
+            <Widgets />
+          </Route>
+        </Switch>  
+      </div>
     </Router>
-          
-    </div>
   );
 }
 
