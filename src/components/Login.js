@@ -69,7 +69,7 @@ function Login() {
                         <input type="password" name="password" onChange={e =>setPassword(e.target.value)} />
                     </label>
                     <a href="#" className="forgot__password">Forgot password?</a>
-                    <button type="submit" onClick='/' className="login__btn">
+                    <button type="submit" className="login__btn" onClick={() => history.push('/')} >
                             <p className="login__btn__text">Log in</p>  
                     </button>
                     </div>
@@ -109,6 +109,5 @@ function Login() {
         </div>
     )
 }
-
 export default Login
 
