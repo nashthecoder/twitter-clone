@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import './Sidebar.css';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import SidebarOption from './SidebarOption';
@@ -10,11 +10,12 @@ import BookmarkBorderIcon from "@material-ui/icons/BookmarkBorder";
 import ListAltIcon from "@material-ui/icons/ListAlt";
 import PermIdentityIcon from "@material-ui/icons/PermIdentity";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
-import { BrowserRouter as Router } from 'react-router-dom';
 import { Button } from "@material-ui/core";
-
+import { Avatar } from '@material-ui/core';
+import { BrowserRouter as Router, Link, Route } from 'react-router-dom'; 
 
 function Sidebar() {
+
     return (
         <div className='sidebar'>
 
@@ -32,14 +33,15 @@ function Sidebar() {
                 <Button variant="outlined" className="sidebar__tweet" fullWidth>
                     Tweet
                 </Button>
-            <div>
-            <Router>
-                <Button onClick='/login'>
-                    @NashTheCoder
-                </Button>    
-            </Router>    
-            </div>
-                    
+                <Router>
+                    <Link to='/login' target='blank'>
+                        <div className='user__profile'>
+                            <Avatar />
+                            <text>Log Out</text>
+                        </div>  
+                    </Link>
+                </Router>
+                            
         </div>
     )
 }

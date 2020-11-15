@@ -39,4 +39,16 @@
     padding-top: 150%;
 }
 
+.user__profile {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.user__profile > text {
+    font-size: 14px;
+    padding-left: 10px;
+}
+
 

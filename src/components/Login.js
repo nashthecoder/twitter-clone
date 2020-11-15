@@ -1,12 +1,44 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Login.css';
 import SearchIcon from '@material-ui/icons/Search';
 import ChatBubbleOutlineOutlinedIcon from '@material-ui/icons/ChatBubbleOutlineOutlined';
 import SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount';
+import { useHistory } from 'react-router-dom';
+import { auth } from '../firebase.js';
 
 
 
 function Login() {
+    const history = useHistory()
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+
+
+
+//prevents browser refresh
+    const login = e => {
+        e.preventDefault()
+        auth
+        .signInWithEmailAndPassword(email, password)
+        .then((auth) => {
+            history.push('/')
+        })
+         .catch(e => console.warn(e.message))
+    }
+
+    //Login logic 
+
+
+    const signUp = e => {
+        e.preventDefault()
+        auth 
+        .createUserWithEmailAndPassword(email, password)
+        .then((auth) => {
+            history.push('/profile')
+        })
+        .catch(e => console.warn(e.message))
+    }
+    //Register logic 
 
     return (
         <div className ='flex__container'>
@@ -28,19 +60,17 @@ function Login() {
                 <section className="flex__item__right">
                     <div className="login__details">
                     <label className="username"
-                        ><p className="username__text">Phone, email, or username</p>
-                        <input type="text" name="username" autofocus />
+                        ><p className="username__text">Email</p>
+                        <input type="text" name="username" autofocus onChange={e =>setEmail(e.target.value)} />
                     </label>
 
                     <label className="password"
                         ><p className="password__text">Password</p>
-                        <input type="password" name="password" />
+                        <input type="password" name="password" onChange={e =>setPassword(e.target.value)} />
                     </label>
-
                     <a href="#" className="forgot__password">Forgot password?</a>
-
-                    <button name="submit" className="login__btn">
-                        <p className="login__btn__text">Log in</p>
+                    <button type="submit" onClick='/' className="login__btn">
+                            <p className="login__btn__text">Log in</p>  
                     </button>
                     </div>
                     <div className="right__grid">
@@ -48,8 +78,8 @@ function Login() {
                         <i className="fab fa-twitter"></i>
                         <p className="right__primary__text">See what's happening in the world right now</p>
                         <p className="right__secondary__text">Join Twitter today.</p>
-                        <a href="#" className="sign__up__link">Sign up</a>
-                        <a href="#" className="login__link">Log in</a>
+                        <a href="#" onClick={signUp} className="sign__up__link">Sign up</a>
+                        <a href="#" onClick={login} className="login__link">Log in</a>
                     </div>
                     </div>
                 </section>

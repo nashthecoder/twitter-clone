@@ -138,6 +138,9 @@ body {
       cursor: pointer;
       background-color: #e8f5fe;
       transition: background-color ease-in 0.1s; }
+  .login__btn__text {
+    text-decoration: none !important;
+  }
   
   .right__grid {
     display: grid;
