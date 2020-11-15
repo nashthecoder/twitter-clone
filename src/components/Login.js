@@ -1,74 +1,78 @@
 import React from 'react';
 import './Login.css';
+import SearchIcon from '@material-ui/icons/Search';
+import ChatBubbleOutlineOutlinedIcon from '@material-ui/icons/ChatBubbleOutlineOutlined';
+import SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount';
+
 
 
 function Login() {
 
     return (
-        <div classNameNameName ='header'>
-            <section classNameNameName="mobile-btn-none">
-                <a href="#" classNameNameName="sign-up-link-none">Sign up</a>
-                <a href="#" classNameNameName="login-link-none">Log in</a>
+        <div className ='flex__container'>
+            <section className="mobilebtn__none">
+                <a href="#" className="signup__link__none">Sign up</a>
+                <a href="#" className="login__link__none">Log in</a>
             </section>
 
-                <section classNameName="flex-item-left">
-                    <div classNameName="left-div">
-                    <p classNameName="left-text"><i classNameName="fas fa-search"></i>Follow your interests.</p>
-                    <p classNameName="left-text">
-                        <i classNameName="fas fa-user-friends"></i>Hear what people are talking about.
+                <section className="flex__item__left">
+                    <div className="left__div">
+                    <p className="left__text"><i className="search__icon"><SearchIcon /> </i>Follow your interests.</p>
+                    <p className="left__text">
+                        <i className="friends__icon"><ChatBubbleOutlineOutlinedIcon /> </i>Hear what people are talking about.
                     </p>
-                    <p classNameName="left-text"><i classNameName="far fa-comment"></i>Join the conversation.</p>
+                    <p className="left__text"><i className="comment__icon"><SupervisorAccountIcon /></i>Join the conversation.</p>
                     </div>
                 </section>
 
-                <section classNameName="flex-item-right">
-                    <div classNameName="login-details">
-                    <label classNameName="username"
-                        ><p classNameName="username-text">Phone, email, or username</p>
+                <section className="flex__item__right">
+                    <div className="login__details">
+                    <label className="username"
+                        ><p className="username__text">Phone, email, or username</p>
                         <input type="text" name="username" autofocus />
                     </label>
 
-                    <label classNameName="password"
-                        ><p classNameName="password-text">Password</p>
+                    <label className="password"
+                        ><p className="password__text">Password</p>
                         <input type="password" name="password" />
                     </label>
 
-                    <a href="#" classNameName="forgot-password">Forgot password?</a>
+                    <a href="#" className="forgot__password">Forgot password?</a>
 
-                    <button name="submit" classNameName="login-btn">
-                        <p classNameName="login-btn-text">Log in</p>
+                    <button name="submit" className="login__btn">
+                        <p className="login__btn__text">Log in</p>
                     </button>
                     </div>
-                    <div classNameName="right-grid">
-                    <div classNameName="right-div">
-                        <i classNameName="fab fa-twitter"></i>
-                        <p classNameName="right-primary-text">See what's happening in the world right now</p>
-                        <p classNameName="right-secondary-text">Join Twitter today.</p>
-                        <a href="#" classNameName="sign-up-link">Sign up</a>
-                        <a href="#" classNameName="login-link">Log in</a>
+                    <div className="right__grid">
+                    <div className="right__div">
+                        <i className="fab fa-twitter"></i>
+                        <p className="right__primary__text">See what's happening in the world right now</p>
+                        <p className="right__secondary__text">Join Twitter today.</p>
+                        <a href="#" className="sign__up__link">Sign up</a>
+                        <a href="#" className="login__link">Log in</a>
                     </div>
                     </div>
                 </section>
                 <div classNameName='footer'>
-            <ul className="footer-grid-container">
-                <li className="footer-item"><a href="#" className="footer-link">About</a></li>
-                <li className="footer-item"><a href="#" className="footer-link">Help Center</a></li>
-                <li className="footer-item"><a href="#" className="footer-link">Terms</a></li>
-                <li className="footer-item"><a href="#" className="footer-link">Privacy policy</a></li>
-                <li className="footer-item"><a href="#" className="footer-link">Cookies</a></li>
-                <li className="footer-item"><a href="#" className="footer-link">Ads info</a></li>
-                <li className="footer-item"><a href="#" className="footer-link">Blog</a></li>
-                <li className="footer-item"><a href="#" className="footer-link">Status</a></li>
-                <li className="footer-item"><a href="#" className="footer-link">Jobs</a></li>
-                <li className="footer-item"><a href="#" className="footer-link">Brand</a></li>
-                <li className="footer-item"><a href="#" className="footer-link">Advertise</a></li>
-                <li className="footer-item"><a href="#" className="footer-link">Marketing</a></li>
-                <li className="footer-item"><a href="#" className="footer-link">Businesses</a></li>
-                <li className="footer-item"><a href="#" className="footer-link">Developers</a></li>
-                <li className="footer-item"><a href="#" className="footer-link">Directory</a></li>
-                <li className="footer-item"><a href="#" className="footer-link">Settings</a></li>
-                <li className="footer-item">
-                <p className="footer-link">&copy 2020 Twitter, Inc.</p>
+            <ul className="footer__grid__container">
+                <li className="footer__item"><a href="#" className="footer__link">About</a></li>
+                <li className="footer__item"><a href="#" className="footer__link">Help Center</a></li>
+                <li className="footer__item"><a href="#" className="footer__link">Terms</a></li>
+                <li className="footer__item"><a href="#" className="footer__link">Privacy policy</a></li>
+                <li className="footer__item"><a href="#" className="footer__link">Cookies</a></li>
+                <li className="footer__item"><a href="#" className="footer__link">Ads info</a></li>
+                <li className="footer__item"><a href="#" className="footer__link">Blog</a></li>
+                <li className="footer__item"><a href="#" className="footer__link">Status</a></li>
+                <li className="footer__item"><a href="#" className="footer__link">Jobs</a></li>
+                <li className="footer__item"><a href="#" className="footer__link">Brand</a></li>
+                <li className="footer__item"><a href="#" className="footer__link">Advertise</a></li>
+                <li className="footer__item"><a href="#" className="footer__link">Marketing</a></li>
+                <li className="footer__item"><a href="#" className="footer__link">Businesses</a></li>
+                <li className="footer__item"><a href="#" className="footer__link">Developers</a></li>
+                <li className="footer__item"><a href="#" className="footer__link">Directory</a></li>
+                <li className="footer__item"><a href="#" className="footer__link">Settings</a></li>
+                <li className="footer__item">
+                <p className="footer__item">&copy; 2020 Fake Twitter.</p>
                 </li>
             </ul>
         </div>
