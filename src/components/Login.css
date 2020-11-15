@@ -35,7 +35,19 @@ body {
     .left-text i {
       font-size: 25px;
       margin-right: 18px; }
-  
+
+.search__icon {
+  margin-right: 5px ;
+}     
+
+.friends__icon {
+  margin-right: 5px ;
+}
+
+.comment__icon {
+  margin-right: 5px ;
+}
+
 .flex__item__right {
     width: 50%;
     height: 100%; }
@@ -78,7 +90,7 @@ body {
     letter-spacing: -0.2px;
     padding: 5px 15px 5px 10px;
     margin-right: 15px;
-    color: #57646e;
+    color: #6f7981;
     border-bottom: 2px solid #657786;
     grid-column: 3 / 4;
     min-width: 200px;
@@ -207,6 +219,11 @@ body {
   .footer__item {
     list-style: none;
     display: inline-block; }
+
+  .footer__item > p {
+    font-size: 12px;
+    font-weight: 700;
+  }
   
   .footer__link {
     text-decoration: none;
